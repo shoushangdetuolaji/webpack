@@ -1,8 +1,4 @@
----
-typora-root-url: img
----
-
-*下载到本地用的，这里的图片路径./img，防止线上图片挂掉了*
+*线上版本引用图库，方便在github查看*
 
 ## 初始webpack
 
@@ -10,7 +6,7 @@ typora-root-url: img
 
 介绍：省略
 
-![](.\1.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/1.png)
 
 
 
@@ -67,7 +63,7 @@ npm install webpack --save-dev
 
 先看文件目录：
 
-![](/4.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/4.png)
 
 
 
@@ -119,7 +115,7 @@ webpack ./src/main.js ./dist/bundle.js
 
 ```
 
-![](/3.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/3.png)
 
 
 
@@ -154,7 +150,7 @@ webpack ./src/main.js ./dist/bundle.js
 
 具体目录是这样的
 
-![](/5.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/5.png)
 
 ```javascript
 const path = require('path')
@@ -174,7 +170,7 @@ module.exports={
 webpack
 ```
 
-![](/6.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/6.png)
 
 #### 特殊情况--项目
 
@@ -225,11 +221,11 @@ npm install webpack@3.6.0 --save-dev
 
 在package.json
 
-前![](/7.png)
+前![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/7.png)
 
 
 
-后![](/8.png)
+后![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/8.png)
 
 --这是开发需要的依赖--save-dev
 
@@ -238,7 +234,7 @@ npm install webpack@3.6.0 --save-dev
 - 直接 `webpack`是全局打包
 - 在项目中肯定要优先项目里的打包呀 ，所以有一下操作 **定义启动**
 
-![](/9.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/9.png)
 
 ​    再来一条 `npm run build`  *可编辑 根据scripts脚本来定义*
 
@@ -248,7 +244,7 @@ npm install webpack@3.6.0 --save-dev
 
 效果图:
 
-![](/10.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/10.png)
 
 
 
@@ -285,7 +281,7 @@ loader是webpack的一个概念
 
 项目目录:
 
-![](/11.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/11.png)
 
 注意src目录的划分命名 而且main.js是入口文件 建议放在外面
 
@@ -362,8 +358,6 @@ less scss stylus都属于css 只是风格不一样 起码掌握一种css风格�
 
 
 安装:  
-
-
 
 ```shell
 #less 是个css预处理语言 less-loader是个转译工具 
@@ -443,7 +437,7 @@ npm run build
 
 文件的目录:
 
-![](/12.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/12.png)
 
 
 
@@ -500,7 +494,7 @@ npm run build
 
 最终图片会变成base64格式
 
-![](/13.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/13.png)
 
 开发本地图片被打包编译成base54还是挺不错的！
 
@@ -526,7 +520,7 @@ npm install file-loader --save-dev
 
 修改webpack.config.js配置
 
-![](/14.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/14.png)
 
 因为：打包的图片文件名会在dist目录下 ${哈希}.jpg|png
 
@@ -540,7 +534,7 @@ npm install file-loader --save-dev
 
 人话：打包的文件都是放在dist目录的，而index需要引用的url，src需要再同一个目录下，所以可以吧index放在dist目录下 也可以在配置中添加publicpath。
 
-![](/15.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/15.png)
 
 这是根据以上配置  '/img/[name].[hash:8].[ext]'打包的文件
 
@@ -709,19 +703,19 @@ loader和plugin的区别
 
 栗子：
 
-![](/16.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/16.png)
 
 
 
 配置:
 
-![](/17.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/17.png)
 
 打包重新查看bundle.js
 
 `npm run build`
 
-![](.\18.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/18.png)
 
 
 
@@ -767,9 +761,9 @@ module.exports={
 - 需要把之前的webpack.config.js中output的publicPath注释掉 
 - 根据Index.html作为模板
 
-![](.\19.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/19.png)
 
-![](.\20.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/20.png)
 
 
 
@@ -870,7 +864,7 @@ module.exports={
 
 修改package.json
 
-![](.\21.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/21.png)
 
 自动打开浏览器
 
@@ -888,7 +882,7 @@ npm run dev
 
 效果:
 
-![](.\22.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/22.png)
 
 
 
@@ -921,7 +915,7 @@ npm install webpack-merge
 
 将webpack.config.js抽离3份放到build目录下
 
-![](.\23.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/23.png)
 
 
 
@@ -1030,4 +1024,4 @@ module.exports = webpackMerge(baseConfig,{
 
 基于配置位置发生变化 package.json需要修改scripts
 
-![](.\24.png)
+![](https://cdn.jsdelivr.net/gh/shoushangdetuolaji/picbed/img/webpack/24.png)
