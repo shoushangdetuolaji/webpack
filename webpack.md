@@ -2,6 +2,8 @@
 typora-root-url: img
 ---
 
+*下载到本地用的，这里的图片路径./img，防止线上图片挂掉了*
+
 ## 初始webpack
 
 本质上，webpack是一个现代的JavaScript应用的静态模块打包工具。
