@@ -4,6 +4,35 @@ typora-root-url: img
 
 *下载到本地用的，这里的图片路径./img，防止线上图片挂掉了*
 
+## 目录
+
+- 初始webpack
+- webpack的安装
+- webpack的起步
+- weppack的配置
+  - 特殊情况--项目
+  - 关于package.json的知识
+- loader的使用
+  - css文件的配置
+  - less文件的配置
+  - 图片文件的处理
+  - *特殊情况
+  - es6语法处理
+- *webpack中配置Vue
+- plugin的使用
+  - 添加版权的plugin
+  - 打包html的plugin
+  - js压缩的plugin
+- 搭建本地服务器
+  - 注意事项
+    - webpack配置文件的分离
+
+
+
+
+
+
+
 ## 初始webpack
 
 本质上，webpack是一个现代的JavaScript应用的静态模块打包工具。
